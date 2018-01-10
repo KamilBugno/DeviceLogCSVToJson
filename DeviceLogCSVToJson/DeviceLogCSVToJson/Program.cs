@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +12,8 @@ namespace DeviceLogCSVToJson
     {
         static void Main(string[] args)
         {
-            Console.Write("Hello world");
+            IConverter converter = new Converter();
+            converter.Convert();
         }
     }
 }
